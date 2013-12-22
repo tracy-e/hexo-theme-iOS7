@@ -1,0 +1,15 @@
+<div class="copyright">
+  <% if (config.author){ %>
+  &copy; <%= new Date().getFullYear() %> <%= config.author %>
+  <% } else { %>
+  &copy; <%= new Date().getFullYear() %> <%= config.title %>
+  <% } %>
+</div>
+
+<% if (theme.cnzzId) { %>
+<div style="position:relative; bottom: 23px">
+  <script src="http://s95.cnzz.com/stat.php?id=<%= theme.cnzzId %>&web_id=<%= theme.cnzzId %>&show=pic1" language="JavaScript">
+  </script>
+</div>
+<% } %>
+

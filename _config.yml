@@ -1,0 +1,30 @@
+menu:
+  Home: /
+  Archives: /archives/
+  About: /about/
+  Subscribe: /atom.xml
+
+widgets: 
+- menu
+- weibo
+- category
+- tagcloud
+
+excerpt_link: Read More
+
+fancybox: true
+
+# 友言评论
+UYUserId:
+
+# cnzz统计
+cnzzId:
+
+# JiaThis分享
+jiathisUUID:
+
+weibo:
+	name:
+	link:
+
+rss: http://xxx.xxx/atom.xml

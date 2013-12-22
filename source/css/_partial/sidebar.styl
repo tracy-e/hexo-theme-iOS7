@@ -1,0 +1,125 @@
+#sidebar
+  display block
+  background color-background
+  border-right 1px solid rgb(200, 200, 200)
+  height 100%
+  width side-width
+  line-height 1.8em
+  position fixed
+  margin 0
+  .navigationBar
+    text-align center
+    width side-width
+    height 44px
+    line-height 44px
+    background white
+    border-bottom 1px solid color-border
+    margin-bottom 30px
+    a
+      font-family Cuprum
+      font-size 22px
+      font-weight bold
+      color black
+      &:hover
+        color color-link
+        text-decoration none
+
+  #menu
+    border-bottom-style none
+    .cell
+      height 44px
+      line-height 44px
+      padding 0 20px
+      font-family Electrolize, sans-serif
+      font-size 15px
+      font-weight normal
+      border-bottom 1px solid rgb(240, 240, 240)
+      &:hover
+        background color-link
+        a 
+          color white
+      a
+        display block
+        color color-font
+        &:hover
+          text-decoration none
+        &:after
+          color #ddd
+          content '\f054'
+          float right
+          font-family font-icon
+  
+  .widget
+    background #fff
+    margin-bottom 30px
+    word-wrap break-word
+    border-top 1px solid color-border
+    border-bottom 1px solid color-border
+    .title
+      height 44px
+      line-height 44px
+      padding 0 20px
+      font-family Electrolize, sans-serif
+      border-bottom 1px solid rgb(240, 240, 240)
+      font-size 15px
+      font-weight normal
+
+    .entry
+      font-size 0.9em
+      padding 15px 20px
+
+    ul, ol, dl
+      list-style none
+      ul, ol, dl
+        list-style disc
+        margin-left 20px
+
+  .search
+    margin-bottom 30px
+    input
+        background #fff
+        font-size 1em
+        padding: 10px 15px
+        border: 0
+        width: 100%
+        box-sizing border-box
+        &:hover
+          border-color color-meta
+  .tag
+    small
+      margin-left 15px
+      color color-meta
+      &:before
+        content '('
+      &:after
+        content ')'
+
+  .weibo
+    background #fff
+
+  .bookshelf
+    .book
+        display inline-block
+        margin 8px
+        width 96px;
+        text-align center
+        vertical-align top
+        line-height 14px
+        img
+          width 100%
+
+  .tagcloud
+    .entry
+      padding-right 5px
+    a
+      margin-right 10px
+      display inline-block
+      color rgb(100, 100, 100)
+      &:hover
+        color color-link
+
+.copyright
+  font-size 13px
+  text-align center
+  color rgb(153, 153, 153)
+  text-shadow 0.5px 0.5px 1px rgb(200, 200, 200)

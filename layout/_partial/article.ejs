@@ -1,0 +1,50 @@
+<% if (item.layout === 'page'){ %>
+  <h2 class="archive-title"><%- item.title %></h2>
+<% } %>
+<article class="<%= item.layout %>">
+  <% if (item.photos){ %>
+    <%- partial('post/gallery') %>
+  <% } %>
+  <div class="post-content">
+  <header>
+      <% if (item.layout != 'page'){ %>
+        <div class="icon"></div>
+      <%- partial('post/title') %>
+      <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+      <% } %>
+  </header>
+    <div class="entry">
+      <% if (item.excerpt && index){ %>
+        <%- item.excerpt %>
+      <% } else { %>
+        <%- item.content %>
+	 <% if (item.layout != 'page'){ %>
+	     <%- partial('post/copyright') %>
+       	 <% } %>
+      <% } %>
+    </div>
+    <footer>
+      <% if (index){ %>
+        <% if (item.excerpt){ %>
+          <div class="alignleft">
+            <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
+          </div>
+        <% } %>
+        <% if (item.comment && config.disqus_shortname){ %>
+        <div class="alignright">
+          <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
+        </div>
+        <% } %>
+      <% } else { %>
+	 <% if (item.title != 'About'){ %>
+     		  <%- partial('post/category') %>
+       		<%- partial('post/tag') %>
+     		  <%- partial('post/share') %>
+       	 <% } %>
+      <% } %>
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+<%- partial('comment') %>

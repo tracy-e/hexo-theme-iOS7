@@ -1,0 +1,7 @@
+<nav class="widget" id="menu">
+	<ul>
+    <% for (var i in theme.menu){ %>
+      <li class="cell"><a class="next" href="<%- theme.menu[i] %>"><%= i %></a><li>
+    <% } %>
+    </ul>
+</nav>
