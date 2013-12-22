@@ -25,6 +25,7 @@ jiathisUUID:
 
 weibo:
 	name:
+	uid:
 	link:
 
-rss: http://xxx.xxx/atom.xml
+rss: http://xxx.xx/atom.xml
