@@ -2,20 +2,8 @@ icon-size = 32px
 icon-gap = 25px
 
 article
-  &.page
-    .icon
-      display none
-
   &.post
     background color-background
-    .icon
-      &:before
-        content '\f016'
-
-  &.photo
-    .icon
-      &:before
-        content '\f030'
 
   &.link
     .icon
@@ -33,10 +21,12 @@ article
 
   .post-content
     background-color white
-    padding 20px 20px 15px (icon-size + icon-gap + 20)
+    padding 20px 20px 15px 20px
     border 1px solid color-border
     margin-bottom 30px
     position relative
+    @media screen and (max-width: 900px)
+      padding 10px
 
   .gallery
     overflow hidden
@@ -255,6 +245,9 @@ article
     position relative
     min-height 16px
     .addthis
+      margin-top 15px
+      iframe
+        margin-top 0
       a
         color color-font
         &:hover
@@ -301,8 +294,3 @@ article
         content '\f02b'
         top 3px
         left 2px
-
-    .addthis
-      margin-top 15px
-      iframe
-        margin-top 0

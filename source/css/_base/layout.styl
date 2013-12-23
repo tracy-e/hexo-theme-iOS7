@@ -8,6 +8,8 @@ body
   font-family font-default
   margin 0
   font-size 14px
+  @media screen and (max-width: 900px)
+  	font-size 12px
 
 h1, h2, h3, h4, h5, h6
   font-family font-title
@@ -48,6 +50,23 @@ a
   &:hover
     text-decoration underline
 
+.navigationBar
+  text-align center
+  width 280px
+  height 44px
+  line-height 44px
+  background rgba(255, 255, 255, 0.9)
+  border-bottom 1px solid color-border
+  margin-bottom 30px
+  a
+    font-family Cuprum
+    font-size 22px
+    font-weight bold
+    color black
+    &:hover
+      color color-link
+      text-decoration none
+
 .alignleft
   float left
 
@@ -59,7 +78,6 @@ a
 
 .inner
   width page-width
-  margin 0 auto
   @media screen and (max-width: 1260px)
     width 100%
 
@@ -69,8 +87,18 @@ a
     width 100%
     margin-left -280px
 
+#hidden-navigationBar
+  display none
+  @media screen and (max-width: 900px)
+    display block
+    width 100%
+    margin-bottom 0
+
 #wrapper
   background color-background
   padding 25px
   @media screen and (max-width: 1260px)
     margin-left 280px
+  @media screen and (max-width: 900px)
+    margin 0 0 60px 0
+    padding 20px 0

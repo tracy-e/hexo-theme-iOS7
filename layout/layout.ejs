@@ -3,16 +3,22 @@
 <body>
   <div id="content" class="inner">
     <aside id="sidebar" class="alignleft">
-    <div class="navigationBar">
-      <a href="<%- config.root %>"><%= config.title %></a>
-    </div>
+      <div class="navigationBar">
+        <a href="<%- config.root %>"><%= config.title %></a>
+      </div>
     	<%- partial('_partial/sidebar') %>
     	<footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
     </aside>
+    
+    
+    <div id="hidden-navigationBar" class="navigationBar">
+      <a href="<%- config.root %>"><%= config.title %></a>
+    </div>
     <div id="main-col" class="alignright">
     <div id="wrapper">
       <%- body %></div>
     </div>
+    <%- partial('_partial/tabbar') %>
   </div>
 </body>
 </html>
