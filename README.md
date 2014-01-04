@@ -1,6 +1,6 @@
 # hexo-theme-iOS7
 
-hexo-theme-iOS7 是为 hexo 制作的主题，风格模仿 iOS7 简约风格， 你可以点击 [我的博客](http://esoftmobile.com) 查看效果。
+hexo-theme-iOS7 是为 [hexo](https://github.com/tommy351/hexo) 制作的主题，风格模仿 iOS7 简约风格， 你可以点击 [我的博客](http://esoftmobile.com) 查看效果。
 
 ##配置
 
